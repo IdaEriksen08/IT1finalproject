@@ -1,0 +1,231 @@
+:root {
+    --beige: hsl(35, 33%, 86%);
+    --lyskrem: hsl(40, 50%, 94%);
+    --mørkegrå: hsl(0, 0%, 17%);
+    --varmbrun: hsl(33, 22%, 45%);
+    --blågrå: hsl(210, 22%, 57%);
+    --sand: hsl(34, 27%, 67%);
+    --hvit: hsl(0, 0%, 100%);
+    --rød: hsl(6, 65%, 54%);
+    --mørkrød: hsl(8, 63%, 46%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--beige);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+header {
+    text-align: center;
+}
+
+header h2 {
+    margin-top: 5px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+header table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+header td {
+    border: 1px solid black;
+}
+
+.section1 {
+    height: 100vh;
+    background-image: url(bilder/parasolbilde1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 div {
+    max-width: 900px;
+    text-align: center;
+}
+
+.section1 div h1 {
+    font-size: 70px;
+    letter-spacing: 2px;
+    color: var(--lyskrem);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.section1 div p {
+    color: var(--lyskrem);
+}
+
+.section2 {
+    border-bottom: 1px solid var(--varmbrun);
+    height: 650px;
+    display: flex;
+    margin-top: 30px;
+    color: var(--mørkegrå);
+}
+
+.section2 img {
+    height: 450px;
+    width: 700px;
+    border: 1px solid --varmbrun;
+}
+
+.section2boks {
+    width: 700px;
+    margin-left: 75px;
+    text-align: center;
+}
+
+.section2boks h2 {
+    margin-top: 35px;
+    margin-left: 100px;
+    font-size: 30px;
+    color: var(--mørkegrå);
+}
+
+.section2boks h2:hover{
+    color: var(--mørkrød);
+}
+
+.section2boks p {
+    margin-top: 25px;
+    text-align: left;
+    max-width: 700px;
+    margin-left: 75px;
+    color: var(--mørkegrå);
+}
+
+#blog {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+#blog img {
+    height: 130px;
+    width: 130px;
+}
+
+#blog div {
+    display: flex;
+    gap: 15px;
+}
+
+#blog button {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: var(--beige);
+    width: 250px;
+    border-radius: 20px;
+}
+
+#blog button:hover {
+    background-color: var(--mørkrød);
+}
+
+#blog h2:hover{
+    color: var(--mørkrød);
+}
+
+.dato {
+    color: var(--blågrå);
+    font-size: 13px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info h3:hover{
+    color: var(--mørkrød);
+}
+
+.section3{
+    height: 480px;
+    border-bottom: solid 1px var(--varmbrun);
+}
+
+.section3 h1 {
+    font-size: 250px;
+    color: var(--mørkegrå);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: absolute;
+    z-index: 1;
+    left: 15%;
+}
+
+.section3 .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 64px 0 32px;
+    top: 40px;
+    left: -1.5%;
+}
+
+.section3 .container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.section3 img {
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+    border: solid 1px var(--varmbrun);
+}
+
+#boks1 img {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 90px;
+    left: 180px;
+    opacity: 0.8;
+}
+
+#boks2 img {
+    height: 200px;
+    width: 270px;
+    position: absolute;
+    top: 110px;
+    right: 180px;
+    opacity: 0.7;
+}
+
+.section4 h1{
+    color: var(--mørkrød);
+}
+
+i{
+    color: var(--mørkrød);
+}
+
