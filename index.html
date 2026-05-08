@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Index html</title>
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -17,12 +19,32 @@
         <div>
             <table>
                 <tr>
-                    <td><p>Hjem</p></td>
-                    <td><p>Om oss</p></td>
-                    <td><p>Blog</p></td>
-                    <td><p>Reise guide</p></td>
-                    <td><p>Destinasjoner</p></td>
-                    <td><p>Kontakt</p></td>
+                    <td>
+                        <p>Hjem</p>
+                    </td>
+                    <td>
+                        <a href="#omoss">
+                            <p>Om oss</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="blog.html">
+                            <p>Blog</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>Reise guide</p>
+                    </td>
+                    <td>
+                        <a href="#destinasjoner">
+                            <p>Destinasjoner</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#footer">
+                            <p>Kontakt</p>
+                        </a>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -31,14 +53,18 @@
         <section class="section1">
             <div>
                 <h1>Sen utsjekking</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iusto aliquid veritatis quas natus facilis nobis consectetur ullam laboriosam vitae adipisci, placeat, odit suscipit repellat animi dolores aliquam. Odio, debitis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iusto aliquid veritatis quas natus
+                    facilis nobis consectetur ullam laboriosam vitae adipisci, placeat, odit suscipit repellat animi
+                    dolores aliquam. Odio, debitis.</p>
             </div>
         </section>
-        <section class="section2">
+        <section id="omoss" class="section2">
             <div class="section2boks">
                 <img src="bilder/section1bilde.jpg" alt="">
                 <h2>Velkommen til Sen Utsjekking!</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ducimus at nihil tempora porro impedit maxime, fuga totam officiis, dicta ipsam nemo nisi inventore praesentium ipsa, eaque aut non rem.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ducimus at nihil tempora porro
+                    impedit maxime, fuga totam officiis, dicta ipsam nemo nisi inventore praesentium ipsa, eaque aut non
+                    rem.</p>
             </div>
             <div id="blog">
                 <h2>Tid for sjekk inn: Bloggen</h2>
@@ -47,7 +73,9 @@
                     <div class="info">
                         <h3>Blog for italia</h3>
                         <p>Alt starter med en ide</p>
-                        <p>Les mer -></p>
+                        <a href="italia.html">
+                            <p class="lesmer">Les mer <span><i class="fa-solid fa-arrow-right"></i></span></p>
+                        </a>
                         <p class="dato">Jun 29, 2025</p>
                     </div>
                 </div>
@@ -56,7 +84,9 @@
                     <div class="info">
                         <h3>Blog for Hellas</h3>
                         <p>Alt starter med en ide</p>
-                        <p>Les mer -></p>
+                        <a href="hellas.html">
+                            <p class="lesmer">Les mer <span><i class="fa-solid fa-arrow-right"></i></span></p>
+                        </a>
                         <p class="dato">Jul 17, 2022</p>
                     </div>
                 </div>
@@ -65,11 +95,13 @@
                     <div class="info">
                         <h3>Blog for Indonesia</h3>
                         <p>Alt starter med en ide</p>
-                        <p>Les mer -></p>
+                        <a href="indonesia.html">
+                            <p class="lesmer">Les mer <span><i class="fa-solid fa-arrow-right"></i></span></p>
+                        </a>
                         <p class="dato">Jan 4, 2026</p>
                     </div>
                 </div>
-                <button>Utforsk bloggen -></button>
+                <a href="blog.html"><button>Utforsk bloggen <span><i class="fa-solid fa-arrow-right"></i></span> </button></a>
             </div>
         </section>
         <section class="section3">
@@ -88,43 +120,58 @@
         </section>
         <section class="section4">
             <h1>Utvlagte reiseturer <span>steder som blir med deg</span></h1>
-    
-            <div class="karusell">
-                <div class="boks">
-                    <img src="" alt="">
-                    <h3></h3>
-                </div>
-                <div class="boks">
-                    <img src="" alt="">
-                    <h3></h3>
-                </div>
-                <div class="boks">
-                    <img src="" alt="">
-                    <h3></h3>
-                </div>
-                <div class="boks">
-                    <img src="" alt="">
-                    <h3></h3>
-                </div>
-                <div class="boks">
-                    <img src="" alt="">
-                    <h3></h3>
-                </div>
-                <div class="boks">
-                    <img src="" alt="">
-                    <h3></h3>
+
+            <div id="destinasjoner" class="karusell">
+                <div class="karusellspor">
+                    <div class="boks liten">
+                        <img src="bilder/karusell/bilde6.jpg" alt="">
+                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                    <div class="boks active">
+                        <img src="bilder/karusell/bilde11.jpg" alt="">
+                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                    <div class="boks">
+                        <img src="bilder/karusell/bilde3.jpg" alt="">
+                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                    <div class="boks liten">
+                        <img src="bilder/karusell/bilde1.jpg" alt="">
+                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                    <div class="boks">
+                        <img src="bilder/karusell/bilde7.jpg" alt="">
+                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                    <div></div>
                 </div>
             </div>
 
             <div class="piler">
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-left" onclick="slide(-1)"></i>
+                <i class="fa-solid fa-arrow-right" onclick="slide(1)"></i>
             </div>
+
         </section>
+        <footer id="footer">
+            <div class="container">
+                <div>
+                    <p>Kontakt: +47 987 00 681</p>
+                </div>
+                <div>
+                    <p>Sen utsjekking</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                </div>
+            </div>
+        </footer>
     </main>
-    <footer>
 
-    </footer>
-
+    <script src="java.js"></script>
 </body>
+
 </html>

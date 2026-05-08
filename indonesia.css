@@ -1,0 +1,61 @@
+:root {
+    --beige: hsl(35, 33%, 86%);
+    --lyskrem: hsl(40, 50%, 94%);
+    --mørkegrå: hsl(0, 0%, 17%);
+    --varmbrun: hsl(33, 22%, 45%);
+    --blågrå: hsl(210, 22%, 57%);
+    --sand: hsl(34, 27%, 67%);
+    --hvit: hsl(0, 0%, 100%);
+    --rød: hsl(6, 65%, 54%);
+    --mørkrød: hsl(8, 63%, 46%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body{
+    background-color: var(--lyskrem);
+}
+
+header{
+    height: 100px;
+    background-color: var(--beige);
+}
+
+header h1{
+    color: var(--mørkegrå);
+    text-transform: uppercase;
+    font-size: 75px;
+    margin-left: 10px;
+}
+
+header h1 span{
+    font-weight: 100;
+    font-size: 70px;
+}
+
+.section1{
+    height: 550px;
+    width: 100%;
+    background-image: url(bilder/indonesia/bilde8.jpg);
+    background-size: cover;
+}
+
+.section2{
+    height: 300px;
+    border-bottom: solid 1px --varmbrun;
+}
+
+.section2 img{
+    height: 150px;
+    width: 400px;
+    border-radius: 200px;
+}
