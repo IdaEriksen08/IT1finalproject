@@ -16,8 +16,8 @@
     box-sizing: border-box;
 }
 
-html{
-     scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -27,6 +27,10 @@ body {
 img {
     width: 100%;
     display: block;
+}
+
+.active2 {
+    display: none;
 }
 
 header {
@@ -51,7 +55,7 @@ header td {
     cursor: pointer;
 }
 
-header td p:hover{
+header td p:hover {
     font-size: 18px;
     transition: 0.4s ease;
 }
@@ -109,7 +113,7 @@ header td p:hover{
     color: var(--mørkegrå);
 }
 
-.section2boks h2:hover{
+.section2boks h2:hover {
     color: var(--mørkrød);
 }
 
@@ -130,7 +134,7 @@ header td p:hover{
     margin-right: 10px;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--mørkegrå);
 }
@@ -159,24 +163,24 @@ a{
     background-color: var(--mørkrød);
 }
 
-#blog h2:hover{
+#blog h2:hover {
     color: var(--mørkrød);
 }
 
-#blog button i{
+#blog button i {
     font-size: 15px;
 }
 
-.lesmer{
-    color: var(--mørkegrå); 
+.lesmer {
+    color: var(--mørkegrå);
     cursor: pointer;
 }
 
-.lesmer span{
+.lesmer span {
     font-size: 14px;
 }
 
-.lesmer:hover{
+.lesmer:hover {
     text-decoration: underline;
 }
 
@@ -190,11 +194,11 @@ a{
     flex-direction: column;
 }
 
-.info h3:hover{
+.info h3:hover {
     color: var(--mørkrød);
 }
 
-.section3{
+.section3 {
     height: 480px;
     border-bottom: solid 1px var(--varmbrun);
 }
@@ -254,7 +258,7 @@ a{
     opacity: 0.7;
 }
 
-.section4 h1{
+.section4 h1 {
     font-size: 50px;
     color: var(--mørkrød);
     margin-top: 30px;
@@ -262,24 +266,24 @@ a{
     margin-bottom: 30px;
 }
 
-span{
+span {
     font-size: 20px;
 }
 
-.karusell{
+.karusell {
     overflow: hidden;
-    width: 1100px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-.karusellspor{
+.karusellspor {
     display: flex;
     align-items: flex-end;
     gap: 20px;
     transition: transform 0.4s ease;
 }
 
-.boks{
+.boks {
     min-width: 180px;
     flex-shrink: 0;
     display: flex;
@@ -287,7 +291,7 @@ span{
     transition: min-width 0.4s ease;
 }
 
-.boks img{
+.boks img {
     width: 100%;
     height: 260px;
     object-fit: cover;
@@ -296,24 +300,24 @@ span{
     border: solid 1px var(--varmbrun);
 }
 
-.boks h3{
+.boks h3 {
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--mørkrød);
     text-align: center;
-    padding: 10px 8px 0 
+    padding: 10px 8px 0
 }
 
-.boks.active{
+.boks.active {
     min-width: 360px;
 }
 
-.boks.active img{
+.boks.active img {
     height: 360px;
 }
 
-.piler{
+.piler {
     display: flex;
     gap: 16px;
     justify-content: flex-end;
@@ -325,23 +329,207 @@ span{
     cursor: pointer;
 }
 
-.liten img{
+.liten img {
     width: 300px;
     height: 300px;
     margin: auto;
 }
 
-footer{
+footer {
     height: 70px;
     margin-top: 60px;
     border-top: solid 1px var(--varmbrun);
 }
 
-.container{
+.container {
     margin: auto;
     display: flex;
     width: 90%;
     justify-content: space-between;
     color: var(--varmbrun);
     margin-top: 30px;
+}
+
+@media(width<1050px) {
+
+    .section2 img {
+        width: 550px;
+    }
+
+    #blog {
+        margin-left: 30px;
+    }
+
+    .section2boks {
+        max-width: 550px;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .section2boks h2 {
+        margin-left: 10px;
+    }
+
+    .section2boks h2:hover {
+        color: var(--mørkrød);
+    }
+
+    .section2boks p {
+        max-width: 550px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .karusell {
+        max-width: 850px;
+    }
+
+    .section3 h1 {
+        font-size: 170px;
+        position: unset;
+        margin: auto;
+    }
+
+    .section3 .container {
+        position: unset;
+        padding: 0px;
+        top: 0px;
+        margin: auto;
+    }
+
+    .section3 img {
+        width: 250px;
+        height: 320px;
+        object-fit: cover;
+        border: solid 1px var(--varmbrun);
+    }
+
+    #boks1 img {
+        width: 240px;
+        position: unset;
+        opacity: unset;
+    }
+
+    #boks2 img {
+        width: 240px;
+        position: unset;
+        opacity: unset;
+    }
+
+    .section3 {
+        height: 550px;
+    }
+
+}
+
+@media(width<900px) {
+    .section2 {
+        flex-direction: column;
+        height: 2200px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #blog {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 200px;
+        margin-right: 10px;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--mørkegrå);
+    }
+
+    #blog img {
+        height: 300px;
+        width: 300px;
+    }
+
+    #blog div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #blog button {
+        margin-top: 20px;
+        border: 1px solid black;
+        padding: 5px;
+        background-color: var(--beige);
+        width: 250px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    #blog h2 {
+        display: none;
+    }
+
+    .active2 {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+@media(width<830px) {
+    .section3 {
+        height: 1050px;
+    }
+
+    .section3 h1 {
+        font-size: 150px;
+        position: unset;
+        margin: auto;
+    }
+
+    .section3 .container {
+        position: unset;
+        padding: 0px;
+        top: 0px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section3 img {
+        width: 250px;
+        height: 320px;
+        object-fit: cover;
+        border: solid 1px var(--varmbrun);
+    }
+
+    #boks1 img {
+        width: 240px;
+        position: unset;
+        opacity: unset;
+    }
+
+    #boks2 img {
+        width: 240px;
+        position: unset;
+        opacity: unset;
+    }
+
+    .section4 h1 {
+        font-size: 40px;
+        color: var(--mørkrød);
+        margin-top: 30px;
+        margin-left: 60px;
+        margin-bottom: 30px;
+    }
+
+    span {
+        font-size: 15px;
+    }
+
+    .karusell {
+        max-width: 600px;
+    }
 }

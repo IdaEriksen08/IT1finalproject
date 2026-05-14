@@ -25,9 +25,27 @@ body{
     background-color: var(--lyskrem);
 }
 
+a{
+    color: var(--mørkegrå);
+}
+
+.active{
+    display: none;
+}
+
 header{
     height: 100px;
     background-color: var(--beige);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h3{
+    margin-right: 30px;
+    font-size: 25px;
+    font-weight: 100;
+    text-decoration: underline;
 }
 
 header h1{
@@ -43,7 +61,7 @@ header h1 span{
 }
 
 .section1{
-    height: 550px;
+    height: 570px;
     width: 100%;
     background-image: url(bilder/indonesia/bilde8.jpg);
     background-size: cover;
@@ -51,11 +69,79 @@ header h1 span{
 
 .section2{
     height: 300px;
-    border-bottom: solid 1px --varmbrun;
+    border-bottom: solid 1px var(--varmbrun);
+    display: flex;
+    margin-top: 50px;
+    gap: 50px;
+    justify-content: center;
+}
+
+.section2 div{
+    width: 400px;
+    margin-left: 50px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+button{
+    background-color: var(--lyskrem);
+    border: none;
+    text-decoration: underline;
+    font-size: large;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .section2 img{
-    height: 150px;
-    width: 400px;
+    height: 200px;
+    width: 550px;
     border-radius: 200px;
+    clip-path: ellipse(50% 40% at 50% 50%);
+}
+
+.section3{
+    height: 350px;
+    display: flex;
+    margin-top: 50px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.bilder{
+    margin-right: 150px;
+     display: flex;
+     gap: 15px;
+}
+
+.bilder img{
+    height: 350px;
+    width: 350px;
+    border: solid 1px var(--varmbrun);
+}
+
+.section3 div{
+    width: 400px;
+    margin-left: 50px;
+}
+
+footer {
+    height: 70px;
+    margin-top: 60px;
+    border-top: solid 1px var(--varmbrun);
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    color: var(--varmbrun);
+    margin-top: 30px;
 }

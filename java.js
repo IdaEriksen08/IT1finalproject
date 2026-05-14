@@ -3,6 +3,7 @@ let nåverende = 1;
 function slide(retning) {
     const spor = document.querySelector(".karusellspor");
     const bokser = document.querySelectorAll(".boks")
+    const boksBredde = bokser[0].offsetWidth;
 
     bokser[nåverende].classList.remove("active");
     nåverende += retning;
@@ -12,5 +13,5 @@ function slide(retning) {
 
     bokser[nåverende].classList.add("active");
 
-    spor.style.transform = `translateX(-${nåverende * 200 - 200}px)`;
+    spor.style.transform = `translateX(-${nåverende * boksBredde - boksBredde}px)`;
 }
