@@ -33,6 +33,10 @@ a {
     display: none;
 }
 
+#display{
+    display: none;
+}
+
 header {
     height: 100px;
     background-color: var(--beige);
@@ -63,7 +67,7 @@ header h1 span {
 .section1 {
     height: 570px;
     width: 100%;
-    background-image: url(bilder/indonesia/bilde8.jpg);
+    background-image: url(bilder/italia/italiahero.jpg);
     background-size: cover;
 }
 
@@ -191,6 +195,10 @@ footer {
 }
 
 @media(width<800px) {
+
+    .section1{
+        background-image: url(bilder/italia/italia5.jpg);
+    }
     .section2 {
         height: 450px;
     }
@@ -226,6 +234,10 @@ footer {
 }
 
 @media(width<640px) {
+     .section1{
+        background-image: url(bilder/italia/italia6.jpg);
+    }
+
     header h1 {
         font-size: 40px;
     }
@@ -233,9 +245,19 @@ footer {
     header h1 span {
         font-size: 30px;
     }
+
+    #display{
+        display: block;
+    }
+
+    #display2{
+        display: none;
+    }
+
 }
 
 @media(width<500px){
+
     .section3{
         height: 1200px;
         justify-content: center;
@@ -270,6 +292,5 @@ footer {
         height: auto;
         padding-bottom: 16px;
     }
-
 
 }

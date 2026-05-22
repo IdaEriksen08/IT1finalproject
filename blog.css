@@ -178,3 +178,161 @@ footer{
     color: var(--varmbrun);
     margin-top: 30px;
 }
+
+@media (width<1030px) {
+    .section2 div,
+    .section2 img {
+        height: 338px;
+        max-width: 338px;
+    }
+
+    .section2 h3,
+    #indonesia,
+    #hellas
+    #italia {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .section3 {
+        max-width: 100%;
+        padding: 0 32px;
+    }
+}
+
+@media(width<1000px){
+    .section2{
+        gap: 10px; 
+        justify-content: center;
+    }
+
+    .section2 div,
+    .section2 img {
+        height: 300px;
+        max-width: 300px;
+    }
+
+    .section2 img{
+        border: solid 1px var(--varmbrun);
+    }
+}
+
+@media(width<900px){
+    .section2{
+        gap: 10px; 
+        justify-content: center;
+    }
+
+    .section2 div,
+    .section2 img {
+        height: 250px;
+        max-width: 250px;
+    }
+}
+
+@media (width<768px) {
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0 16px;
+    }
+
+    .section2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section2 div,
+    .section2 img {
+        margin-top: 20px;
+        height: 450px;
+        max-width: 450px;
+    }
+
+    .section2 img{
+     border: solid 1px var(--varmbrun);
+    }
+
+    .section2 h3,
+    #indonesia,
+    #hellas {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .section3 div {
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .section3 div img {
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (width<480px) {
+    header h2 {
+        font-size: 19px;
+    }
+
+    header td p {
+        font-size: 13px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .section1 {
+        height: auto;
+        padding: 32px 16px;
+    }
+
+    .section1 div {
+        margin-top: 0;
+    }
+
+    .section2 div,
+    .section2 img {
+        height: 350px;
+    }
+
+    .section3 {
+        padding: 0 8px;
+    }
+
+    .section3 div {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    footer {
+        height: auto;
+        padding-bottom: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-top: 16px;
+        text-align: center;
+    }
+}

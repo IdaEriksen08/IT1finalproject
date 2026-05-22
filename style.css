@@ -29,6 +29,18 @@ img {
     display: block;
 }
 
+#hamburger {
+    display: none;
+}
+
+#cross {
+    display: none;
+}
+
+nav{
+    display: none;
+}
+
 .active2 {
     display: none;
 }
@@ -480,7 +492,7 @@ footer {
 
 @media(width<830px) {
     .section3 {
-        height: 1050px;
+        height: 1015px;
     }
 
     .section3 h1 {
@@ -521,15 +533,91 @@ footer {
         font-size: 40px;
         color: var(--mørkrød);
         margin-top: 30px;
-        margin-left: 60px;
+        margin-left: 40px;
         margin-bottom: 30px;
     }
 
     span {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .karusell {
         max-width: 600px;
     }
+
+    .section1 div {
+        max-width: 700px;
+    }
+
+    #blog {
+        width: 300px;
+        margin: auto;
+
+    }
+
+    .section2 {
+        justify-content: center;
+    }
+}
+
+@media(width<600px) {
+    .section2 img {
+        height: 400px;
+        width: 500px;
+        margin: auto;
+    }
+
+    .section2boks {
+        width: 500px;
+    }
+
+    .karusell {
+        max-width: 500px;
+    }
+
+    .section3 h1 {
+        font-size: 130px;
+        position: unset;
+        margin: auto;
+    }
+
+    .active2 {
+        margin-bottom: 0px;
+    }
+
+    #blog{
+        margin-top: 0px;
+    }
+
+}
+
+@media(width<550px){
+    .section2 img {
+        width: 400px;
+    }
+
+    .section2boks {
+        width: 400px;
+    }
+
+    .karusell {
+        max-width: 400px;
+    }
+
+    #blog{
+        margin-top: 20px;
+    }
+
+    .section4 h1 {
+        font-size: 30px;
+        color: var(--mørkrød);
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+
+    span {
+        font-size: 16px;
+    }
+
 }

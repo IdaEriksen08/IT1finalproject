@@ -63,7 +63,7 @@ header h1 span {
 .section1 {
     height: 570px;
     width: 100%;
-    background-image: url(bilder/indonesia/bilde8.jpg);
+    background-image: url(bilder/Hellas/Hellas1.jpg);
     background-size: cover;
 }
 
@@ -110,10 +110,9 @@ button:hover {
 }
 
 .section2 img {
-    height: 200px;
-    width: 550px;
-    border-radius: 200px;
-    clip-path: ellipse(50% 40% at 50% 50%);
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
 }
 
 .section3 {
